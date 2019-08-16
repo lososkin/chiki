@@ -26,7 +26,7 @@ SECRET_KEY = 'bhj(7s!ns@gd4#6l95!v8@2gidkn8*mh-lrp(ztkqj236fyvlq'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'lososnya.pythonanywhere.com/'
+    'lososnya.pythonanywhere.com'
 ]
 
 
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'chiki_kfu.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/losos/chiki_project/chiki_kfu/templates'],
+        'DIRS': ['/home/losos/chiki_project/chiki_kfu/templates','/home/losos/chiki/chiki_kfu/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
