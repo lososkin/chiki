@@ -15,7 +15,8 @@
 			height: 50px;
 		}
 		.center {
-  	margin: auto; /* Выравниваем по центру */
+			text-align: center;
+  		margin: auto; /* Выравниваем по центру */
    	}
 		@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
 		.gradient-text {
@@ -44,8 +45,8 @@
 	<div>
 			<h3><a href="/top" >Top Тёлочки</a></h3>
 	</div>
-	<div>
-		<div class="child">
+	<div class="center">
+		<div class="child center">
 			<a href=" {{ dev1_link }} " target="_blank">
 				<img src=" {{ dev1_photo }} ">
 			</a>
@@ -56,8 +57,8 @@
 			</a>
 		</div>
 	</div>
-	<div>
-		<div class="child">
+	<div class="center">
+		<div class="child center">
 			<a class="notpodcherk" href="addlike/{{id1}}">
 				<div style="border-radius: 8px;" class="vote_button">
 						<p class="gradient-text">
