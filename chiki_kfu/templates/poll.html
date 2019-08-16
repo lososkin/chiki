@@ -3,8 +3,6 @@
 <head>
 	<title></title>
 	<style type="text/css">
-
-
 		.vote_button {
 			text-align: center;
 			height: 50px;
@@ -17,11 +15,8 @@
 			height: 50px;
 		}
 		.center {
-    width: 200px; /* Ширина элемента в пикселах */
-    padding: 10px; /* Поля вокруг текста */
-    margin: auto; /* Выравниваем по центру */
-    background: #fc0; /* Цвет фона */
-   }
+  	margin: auto; /* Выравниваем по центру */
+   	}
 		@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
 		.gradient-text {
 		  font-family: 'Rubik One', sans-serif;
@@ -34,41 +29,52 @@
 		  display: table;
 		  margin: 20px auto;
 		}
-		.notpodcherk /* у ссылки с классом notpodcherk не будет подчеркивания по умолчанию */
-			{
-			text-decoration: none
-			}
+		.notpodcherk
+		{
+		text-decoration: none
+		}
+		.child
+		{
+			display: inline-block;
+		}
 	</style>
 
 </head>
 <body>
-	<h3><a href="/top" >Top Тёлочки</a></h3>
 	<div>
-		<a href=" {{ dev1_link }} " target="_blank">
-			<img src=" {{ dev1_photo }} ">
-		</a>
-		<a class="notpodcherk" href="addlike/{{id1}}">
-			<div style="border-radius: 8px;" class="vote_button">
-				<p class="gradient-text">
-				Голосовать
-				</p>
-			</div>
-		</a>
+			<h3><a href="/top" >Top Тёлочки</a></h3>
 	</div>
-
-	<div class="gap"></div>
-
-	<div style="border-radius: 8px;" class="radius">
-		<a href=" {{ dev2_link }} " target="_blank">
-			<img src=" {{ dev2_photo }} ">
-		</a>
-		<a class="notpodcherk" href="addlike/{{id2}}">
-			<div style="border-radius: 8px;" class="vote_button">
-				<p class="gradient-text">
-				Голосовать
-				</p>
+	<div>
+		<div class="child">
+			<a href=" {{ dev1_link }} " target="_blank">
+				<img src=" {{ dev1_photo }} ">
+			</a>
 		</div>
-		</a>
+		<div class="child">
+			<a href=" {{ dev2_link }} " target="_blank">
+				<img src=" {{ dev2_photo }} ">
+			</a>
+		</div>
+	</div>
+	<div>
+		<div class="child">
+			<a class="notpodcherk" href="addlike/{{id1}}">
+				<div style="border-radius: 8px;" class="vote_button">
+						<p class="gradient-text">
+						Голосовать
+						</p>
+				</div>
+			</a>
+		</div>
+		<div class="child">
+			<a class="notpodcherk" href="addlike/{{id2}}">
+				<div style="border-radius: 8px;" class="vote_button">
+						<p class="gradient-text">
+						Голосовать
+						</p>
+				</div>
+			</a>
+		</div>
 	</div>
 </body>
 </html>
