@@ -25,7 +25,9 @@ SECRET_KEY = 'bhj(7s!ns@gd4#6l95!v8@2gidkn8*mh-lrp(ztkqj236fyvlq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'http://lososnya.pythonanywhere.com/'
+]
 
 
 # Application definition
