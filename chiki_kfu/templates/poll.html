@@ -2,10 +2,25 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		
+		
+		.vote_button {
+			background-color: green;
+			height: 50px;
+			width: 400px;
+		}
+		.gap {
+			height: 50px;
+		}
+	</style>
 </head>
 <body>
-	<div><a href=" {{ dev1_link }} "><img src=" {{ dev1_photo }} "></a></div>
-	<div><a href=" {{ dev2_link }} "><img src=" {{ dev2_photo }} "></a></div>
+
+	<div><a href=" {{ dev1_link }} " target="_blank"><img src=" {{ dev1_photo }} "></a><a href="addlike/{{id1}}"><div class="vote_button"></div></a></div>
+
+	<div class="gap"></div>
+
+	<div><a href=" {{ dev2_link }} " target="_blank"><img src=" {{ dev2_photo }} "></a><a href="addlike/{{id2}}"><div class="vote_button"></div></a></div>
 </body>
 </html>

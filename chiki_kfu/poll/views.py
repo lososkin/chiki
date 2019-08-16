@@ -1,4 +1,4 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response, redirect
 from django.http.response import HttpResponse
 from django.template.loader import get_template
 from django.template import Context
@@ -23,5 +23,13 @@ def poll(reqest):
 		id_dev2 = random.randint(2717, 15130)
 	dev1= Chika.objects.get(id=id_dev1)
 	dev2= Chika.objects.get(id=id_dev2)
-	return render_to_response('poll.html',{'dev1_link':dev1.vk_link,'dev1_photo':dev1.photo_link,'dev2_link':dev2.vk_link,'dev2_photo':dev2.photo_link})
+	return render_to_response('poll.html',{'dev1_link':dev1.vk_link,'dev1_photo':dev1.photo_link,'dev2_link':dev2.vk_link,'dev2_photo':dev2.photo_link,'id1':id_dev1,'id2':id_dev2})
 
+def addlike(reqest,id_devki):
+	try:
+		chika = Chika.objects.get(id=id_devki)
+		chika.likes+=1
+		chika.save()
+	except:
+		pass
+	return redirect("/")
