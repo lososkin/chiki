@@ -59,7 +59,7 @@ ROOT_URLCONF = 'chiki_kfu.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/losos/chiki_project/chiki_kfu/templates','/home/losos/chiki/chiki_kfu/templates'],
+        'DIRS': ['/home/losos/chiki_project/chiki_kfu/templates','/home/lososnya/chiki/chiki_kfu/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
