@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top 100 Chik</title>
+</head>
+<body>
+	<h3><a href="/">Na glavnyu</a></h3>
+	{% for chika in top100chik %}
+		{{chika.likes}} <a href="{{chika.vk_link}}">{{chika.vk_link}}</a>
+		<br>
+	{% endfor %}
+</body>
+</html>

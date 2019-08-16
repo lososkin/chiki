@@ -7,16 +7,10 @@ import random
 # Create your views here.
 
 def top(reqest):
-	name_page = "top"
-	template = get_template("poll.html")
-	html = template.render({'name': name_page})
-	return HttpResponse(html)
+	top100chik = Chika.objects.order_by('likes').reverse()[0:100]	
+	return render_to_response('top.html',{'top100chik':top100chik})
 
 def poll(reqest):
-	# name_page = "poll"
-	# template = get_template("poll.html")
-	# html = template.render({'name': name_page})
-	# return HttpResponse(html)
 	id_dev1 = random.randint(2717, 15130)
 	id_dev2 = id_dev1
 	while id_dev1==id_dev2:

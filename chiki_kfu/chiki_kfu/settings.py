@@ -26,7 +26,8 @@ SECRET_KEY = 'bhj(7s!ns@gd4#6l95!v8@2gidkn8*mh-lrp(ztkqj236fyvlq'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'lososnya.pythonanywhere.com'
+    'lososnya.pythonanywhere.com',
+    '127.0.0.1',
 ]
 
 
