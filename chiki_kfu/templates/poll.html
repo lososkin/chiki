@@ -27,8 +27,8 @@
 		}
 
 		.buttons {
-			margin-right: 140px;
-			margin-left: 140px;
+			margin-right: 103px;
+			margin-left: 103px;
 		}
 
 		.center {
@@ -82,7 +82,6 @@
 		a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
 		a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
 		a:hover {background: rgba(255,255,255,.2);}
-
 	</style>
 </head>
 <body>
@@ -91,15 +90,15 @@
 	</div>
 	<div class="center">
 			<a class="paddingZero" href=" {{ dev1_link }} " target="_blank">
-				<img src=" {{ dev1_photo }} " width="400px" height="400px">
+				<img src=" {{ dev1_photo }} " height="400px">
 			</a>
 			<a class="paddingZero" href=" {{ dev2_link }} " target="_blank">
-				<img src=" {{ dev2_photo }} " width="400px" height="400px">
+				<img src=" {{ dev2_photo }} " height="400px">
 			</a>
 	</div>
 	<div class="center">
-			<a class="buttons" href="addlike/{{id1}}">Это топ?</a>
-			<a class="buttons" href="addlike/{{id2}}">Нет, эта!</a>
+			<a class="buttons" style="width: 200px;" href="addlike/{{id1}}">Это топ чика?</a>
+			<a class="buttons" style="width: 200px;" href="addlike/{{id2}}">Нет, эта!</a>
 	</div>
 </body>
 </html>
