@@ -10,6 +10,7 @@ django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
 pipfile = "*"
+simplejson = "*"
 
 [requires]
 python_version = "3.6"
