@@ -77,8 +77,8 @@
 <body>
 	<h3><a href="/">На главную</a></h3>
 	{% for chika in top100chik %}
-	<div>
-		<p style="font-size: 20px;">{{chika.likes}}</p>
+	<div style="margin-left: 50px;">
+		{{chika.likes}}
 		<a href="{{chika.vk_link}}">{{chika.vk_link}}</a>
 		</br>
 	</div>
