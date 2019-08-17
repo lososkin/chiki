@@ -7,7 +7,6 @@
 		html {height: 100%}
 		body {
 		background: linear-gradient(to top, #55EFCB 0%, #5BCAFF 100%);
-		height: 100%;
 		}
 		h3 {
 			font-size: 2.5em;
@@ -78,8 +77,11 @@
 <body>
 	<h3><a href="/">На главную</a></h3>
 	{% for chika in top100chik %}
-		{{chika.likes}} <a href="{{chika.vk_link}}">{{chika.vk_link}}</a>
-	</br>
+	<div>
+		<p style="font-size: 20px;">{{chika.likes}}</p>
+		<a href="{{chika.vk_link}}">{{chika.vk_link}}</a>
+		</br>
+	</div>
 	{% endfor %}
 </body>
 </html>
